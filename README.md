@@ -5,7 +5,7 @@
 Порядок регистрации описан в [документации CloudPayments](https://cloudpayments.ru/Docs/Connect)
 ### Совместимость:
 * Drupal v.7.x;
-* Ubercart v.3.x;
+* Ubercart v.3.x;  
 Модуль тестировался на Ubercart v.3.11
 
 
@@ -26,8 +26,8 @@
 ### Настройка модуля
 Далее заполните и сохраните настройки на странице /admin/config/system/cloudpayments.
 
-![1](cloudpayments/img/1.png)
-![2](cloudpayments/img/2.png)
+![1](/img/1.png)
+![2](/img/2.png)
 
 Описание настроек:
 * **Public_id** — Public id сайта из личного кабинета CloudPayments;
@@ -48,14 +48,13 @@
 * **Заказ отменён (DMS)** - статус для отмены авторизованных денежных средств. (функция работает только для аторизованного платежа)
 * **Поле для телефона** - Позволяет выполнять отправку чеков по SMS вашим клиентам, если поле с номером телефона добавлено [стандартным способом](https://docs.drupalcommerce.org/commerce1/user-guide/customer-profiles/configuring--creating-customer-profiles);
 
-В случае если вы настраивали налоги через модуль Ubercart ![4](cloudpayments/img/4.png)
-то в настройках CloudPayments необходимо указать "Take from setting" (Брать из настроек) 
-![5](cloudpayments/img/5.png)
-в противном случае платежи не будут проходить.
-Если цены товаров указаны уже с учетом налогов  
-![6](cloudpayments/img/6.png) 
-то в настройках CloudPayments выберите необходимый показатель   
-![7](cloudpayments/img/7.png)
+В случае, если вы настраивали налоги через модуль Ubercart ![4](cloudpayments/img/4.png)  
+то в настройках CloudPayments необходимо указать "Take from setting" (Брать из настроек)   
+![5](img/5.png)  
+в противном случае платежи не будут проходить. Если цены товаров указаны уже с учетом налогов  
+![6](img/6.png)   
+то в настройках CloudPayments выберите необходимый показатель     
+![7](img/7.png)  
 
 ### Настройка вебхуков:
 
@@ -64,5 +63,5 @@
 * (Pay) 		http(s)://yourdomainname.ru/cloudpayments/pay
 * (Confirm)		http(s)://yourdomainname.ru/cloudpayments/confirm
 * (Refund)		http(s)://yourdomainname.ru/cloudpayments/refund
-![3](cloudpayments/img/3.png)
+![3](/img/3.png)
 где yourdomainname.ru - доменное имя вашего сайта.
