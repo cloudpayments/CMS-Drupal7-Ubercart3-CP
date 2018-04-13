@@ -72,6 +72,10 @@ function cloudpayments_uc_payment_method()
  */
 function cloudpayments_uc_checkout_complete($order, $account)
 {
+	global $user;
+	// авторизуем пользователя
+	$user = user_load($account->uid);
+	user_login_finalize();
 	uc_cart_empty(uc_cart_get_id());
 	drupal_goto("/user/{$order->uid}/orders/{$order->order_id}");
 }
