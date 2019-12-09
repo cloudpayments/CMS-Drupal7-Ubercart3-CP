@@ -67,4 +67,13 @@
 * (Confirm)		http(s)://yourdomainname.ru/cloudpayments/confirm
 * (Refund)		http(s)://yourdomainname.ru/cloudpayments/refund
 ![3](/img/3.png)
-где yourdomainname.ru - доменное имя вашего сайта.
+где yourdomainname.ru - доменное имя вашего сайта.  
+
+#### Changelog
+
+= 1.1 = 
+* Добавление выбора дизайна виджета;  
+* Правка значений ставок НДС;
+
+= 1.0 =
+* Публикация модуля.
